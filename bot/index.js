@@ -5,6 +5,14 @@ const token = process.env.TOKEN;
 const express = require("express");
 const app = express();
 const axios = require("axios");
+var cors = require('cors')
+
+const corsOptions = {
+    origin: 'https://discord.extensio.xyz',
+    optionsSuccessStatus: 200,
+}
+
+app.use(cors(corsOptions));
 
 let cache = { lastFetched: new Date(0), data: {} };
 
