@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensio | Discord</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #302f3d;
+            color: #c1c0c9;
+            padding: 30px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 20px;
+            cursor: pointer;
+            transition: ease-in 150ms;
+        }
+
+        button:hover {
+            transition: ease-out 75ms;
+            scale: 1.1;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <h1>It appears you do not have javascript enabled</h1>
+        <p>Press the button to continue to the discord server</p>
+        <a href="https://discord.gg/3uhgsDzCse"><button>Join the discord server</button></a>
+    </noscript>
+    <div id="container" style="display: none;">
+        <h1>Redirecting you...</h1>
+        <p>Not redirected? Click the button to join the discord server</p>
+        <a href="https://discord.gg/3uhgsDzCse"><button>Join the discord server</button></a>
+    </div>
+    <script>
+        document.getElementById("container").style.display = "block";
+        window.location.href = "https://discord.gg/3uhgsDzCse";
+    </script>
+</body>
+</html>
