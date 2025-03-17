@@ -8,7 +8,7 @@ const CLIENT_ID = "1215770435887698042"
 const scope = "identify+connections";
 const redirect = "https://discord.extensio.xyz/link";
 const API_URL = "https://discord.com/api/v10";
-const SUBMIT_URL = "http://strawberry.fps.ms:10994";
+const SUBMIT_URL = "http://_discord.extensio.xyz";
 
 async function generatePKCE() {
     const code_verifier = [...Array(64)]
